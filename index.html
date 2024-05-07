@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخزرجي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  transition: .5s;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.733);
+  transition: 0s;
+}
+.logo{
+    height: 10%;
+    background: linear-gradient(to right ,blue ,white 80%);
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 50px;
+    border-radius: 50%;
+}
+.image img{
+    width: 100%;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titel{
+    width: 210px;
+    height: 100%;
+    font-family: rubik;
+}
+.titel p::first-line{
+    font-size: 25px;
+    text-align: center;
+}
+.titel span{
+    display: block;
+    width: 100%;
+    font-size: 23px;
+    word-spacing: 10px;
+    text-align: left;
+}
+.links{
+    height: 100%;
+    width: 50%;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    font-size: 20px;
+    font-family: rubik;
+    color: black;
+    text-decoration: none;
+    border-bottom: transparent solid 2px;
+}
+a:hover{
+border-bottom:  black solid 2px;
+}
+a:active{
+    color: red;
+}
+.container{
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(to right,#00006ef1,#000025 80%),url(omer-is.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;  
+}
+.container:hover{
+  background: linear-gradient(to right,transparent,#000036),url(omer-is.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: left;    
+}
+.descrip{
+  height: 100%;
+  direction: rtl;
+}
+header{
+  width: fit-content;
+  padding-top: 100px;
+  padding-right: 30px;
+  font-size: 30px;
+  font-family: kufam;
+  transition: .5s;
+}
+main{
+  padding:5px 40px 0px 0px;
+  width: 550px;
+  font-size:  22px;
+  font-family: noto sans arabic;
+  transition: .5s;
+}
+header:hover,main:hover{
+    color: white;
+}
+button{
+  width: 150px;
+  font: 25px aref ruqaa;
+  border-radius: 20px;
+  padding-bottom: 8px;
+  margin: 30px 150px 0px 0px ;
+  border: transparent;
+  word-spacing: 75px;
+  transition: .5s;
+}
+button:hover{
+    border: white solid 2px;
+    background: transparent;
+  word-spacing: normal;
+  cursor: pointer;    
+}
+.link-icon{
+    text-align: center;
+    word-spacing: 30px;
+}
+.link-icon a i{
+    font-size: 30px;
+}
+.youtube-icon{
+    color: red;
+}
+.facebook-icon{
+    color: rgb(0, 0, 255);
+}
+/* ............................................... */
+/* ............................................... */
+@media(max-width:600px){
+    .links{
+        width: 80%;
+    }
+    li{
+        flex-wrap: wrap;
+    }
+    a{
+       font-size: 18px;
+    }
+    .content{
+        direction: rtl;
+        flex-direction: column;
+    }
+    .titel{
+        text-align: center;
+    }
+    .titel p::first-line{
+        font-size: 20px;
+        text-align: center;
+    }
+    .titel span{
+        font-size:16px ;
+        text-align: center;
+        word-spacing: 45px;
+    }
+    main{
+       width: 80%; 
+    }
+    button{
+        margin: 10px 100px 0px 0px ;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="image"><img src="omer.jpg" alt=""></div>
+        <div class="content">
+        <div class="titel">
+            <p>دواجن الخزرجي <br><span>جوده كفاءه تميز</span></p>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="">الرئيسيه</a>
+                    <a href="">جديدنا</a>
+                    <a href="">موقعنا</a>
+                    <a href="">حول</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+<div class="descrip">
+    <header>دواجن الخزرجي</header>
+    <main>يهتم 
+        موقع "دواجن الخزرجي" بتربية 
+        الدواجن ويوفر معلومات ونصائح حول اختيار 
+        الحضانات المناسبة والفقاسات. يسعى الموقع
+         لتوفير المعلومات اللازمة للمربين
+         والمهتمين بتربية الدواجن من خلال
+         مقالات وفيديوهات مختصره وفعّالة.
+        </main>
+          <button>اضغط هنا</button>  
+</div>
+    </div>
+    <div class="icon">
+        <p style="font-size: 20px;font-family: aref ruqaa;direction: rtl;color: white;text-align: center;">لمعرفة المزيد حول "دواجن الخزرجي"</p>
+        <div class="link-icon">
+            <a target="_blank" href="https://www.youtube.com/@AL.Khazraji"><i class="fab fa-youtube youtube-icon"></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100075701784351"><i class="fab fa-facebook facebook-icon"></i></a> 
+        </div>
+    </div>
+</body>
+</html>
